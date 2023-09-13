@@ -26,7 +26,9 @@ const App = () => {
       <input type="text" name="user_phone" className='border border-zinc-800'/>
       <label>Message</label>
       <textarea name="message" className='border border-zinc-800'/>
-      {/* <input type="submit" value="Send" /> */}
+
+      <div class="g-recaptcha" data-sitekey="6LcKQCEoAAAAAIrj-g-UdDBTfYdeQX3pW1wpbtgL"></div>
+
       <button type='submit'> Send</button>
     </form>
   )
