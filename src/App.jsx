@@ -17,7 +17,7 @@ const App = () => {
       });
   };
   return (
-    <form ref={form} onSubmit={sendEmail} className='flex flex-col  max-w-md'>
+    <form ref={form} onSubmit={sendEmail} className='flex flex-col  max-w-md' action="?" method="POST">
       <label>Name</label>
       <input type="text" name="user_name" className='border border-zinc-800' />
       <label>Email</label>
@@ -29,7 +29,7 @@ const App = () => {
 
       <div class="g-recaptcha" data-sitekey="6LcKQCEoAAAAAIrj-g-UdDBTfYdeQX3pW1wpbtgL"></div>
 
-      <button type='submit'> Send</button>
+      <button type='submit' value="Submit"> Send</button>
     </form>
   )
 }
