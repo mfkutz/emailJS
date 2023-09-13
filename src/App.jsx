@@ -24,7 +24,7 @@ const App = () => {
       });
   };
   return (
-    <form ref={form} onSubmit={sendEmail} className='flex flex-col  max-w-md' action="?" method="POST">
+    <form ref={form} onSubmit={sendEmail} className='flex flex-col  max-w-md'>
       <label>Name</label>
       <input type="text" name="user_name" className='border border-zinc-800' />
       <label>Email</label>
